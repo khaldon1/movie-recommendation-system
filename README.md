@@ -136,13 +136,28 @@ Open the URL in your browser and enter a movie recommendation query, such as:
 recommend me old classic movies with good ratings
 ```
 
+
+## Run Gradio App on Google Colab
+
+!git clone https://github.com/khaldon1/movie-recommendation-system.git
+%cd movie-recommendation-system
+!pip install -r requirements.txt
+
+# Add your OpenRouter API key
+import os
+os.environ["OPENROUTER_API_KEY"] = "your_key_here"
+
+!python app/gradio_app.py
+
+
+
 ## Limitations
 
 - The dataset mainly contains movie metadata.
 - The dataset does not include full plot descriptions or user reviews.
 - The RAG response is grounded on metadata only.
 - Free OpenRouter models may sometimes be rate-limited.
-
+-Because the available dataset does not include user reviews or full plots, the DL part was implemented using an MLP on structured metadata, and sentiment analysis is listed as a future improvement.
 
 ## Future Improvements
 
