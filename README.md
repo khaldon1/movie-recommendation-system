@@ -74,8 +74,8 @@ The RAG system works as follows:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/khaldon1/imdb-movie-recommendation-system.git
-cd imdb-movie-recommendation-system
+git clone https://github.com/khaldon1/movie-recommendation-system.git
+cd movie-recommendation-system
 ```
 
 ### 2. Install Requirements
@@ -109,7 +109,7 @@ jupyter notebook
 Then open:
 
 ```text
-notebooks/imdb_complete_ai_project.ipynb
+notebooks/data_science.ipynb
 ```
 
 Run all cells from top to bottom.
